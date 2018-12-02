@@ -12,7 +12,7 @@ But the installation of Opam will work differently on different operating system
 ### Windows
 Because Windows does not have a Unix shell built in, we have to install one.
 There are several ways to do this.
-I will give instructions for using Cygwin (a third-party tool for installing Linux programs natively on Windows) and the Windows Subsystem for Linux (also called "Bash on Ubuntu on Windows"). 
+I will give instructions for using Cygwin (a third-party tool for installing Linux programs natively on Windows) and the Windows Subsystem for Linux (also called "Bash on Ubuntu on Windows"). You can also try using OCPWin (a self-contained OCaml installer) or by creating a virual machine installation of Linux and following the Linux instructions there, but I recommend these two methods.
 
 ### Windows: Cygwin Method
 
@@ -27,6 +27,10 @@ I will give instructions for using Cygwin (a third-party tool for installing Lin
 * Then you will be back in the OCaml setup.
 * In the future, you can use setup-x64_64.exe from [Cygwin Installation](https://cygwin.com/install.html) to update or install the packages in the Cygwin system.
 * Open the Cygwin64 Terminal (instead of the Windows Command Prompt) to continue below.
+
+### Windows: WSL Method
+* Open PowerShell as an administrator (right click; Run as Administrator) and run `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+`
 
 ### Mac OS
 * If you do not have Homebrew installed (run `brew` in Terminal to see), [install Homebrew](https://brew.sh/).
