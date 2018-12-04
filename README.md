@@ -47,6 +47,7 @@ The Windows Subsystem for Linux (also called "Bash on Ubuntu on Windows") is Mic
   * Type `r` for `Run once` and the script will add a bunch of exclusions to the Windows Defender paths.
   * Close PowerShell and reopen the Ubuntu app.
 * Install [Xming](https://sourceforge.net/projects/xming/) if you want graphics support for `emacs`.
+  * If you do, add `export DISPLAY=:0` to your `~/.bashrc` (open `~/.bashrc` from the Ubuntu terminal with your preferred text editor) so that Linux programs can connect to the Xming display server while it is running.
 * Run the following commands in the Ubuntu app:
   * `sudo apt update`
   * `sudo apt dist-upgrade -y` (This takes a while.)
@@ -102,3 +103,11 @@ Run the following commands in the Unix terminal (Terminal.app on Mac OS, Ubuntu 
 ### Atom
 
 ### Visual Studio Code
+
+## Setting up F#
+
+### Mac OS
+
+### Linux
+
+### Windows
