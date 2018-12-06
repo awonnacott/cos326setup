@@ -11,7 +11,7 @@ But the installation of Opam will work differently on different operating system
 
 ### Mac OS
 * If you do not have Homebrew installed (run `brew` in Terminal to see), [install Homebrew](https://brew.sh/).
-* `brew instal opam ocaml`
+* `brew install opam ocaml`
 * If you want to use `emacs` as your text editor, also `brew install emacs` because Mac OS X comes with an out-of-date version of emacs. 
 
 ### Linux
@@ -92,22 +92,33 @@ Run the following commands in the Unix terminal (Terminal.app on Mac OS, Ubuntu 
 * Run `which ocamlbuild` to check that `ocamlbuild` is installed.
 * Run `opam user-setup install` to configure `merlin` in `emacs` and `vim`.
 
-## Setting up text editors for Ocaml
+## Setting up F#
+
+### Mac OS
+Follow Option 1 or Option 2 from [Use F# on Mac OSX](https://fsharp.org/use/mac/).
+
+### Linux
+Follow the instructions for your distribution at [Use F# on Linux](https://fsharp.org/use/linux/).
+
+### Windows
+Follow Option 1 or Option 2 at [Use F# on Windows](https://fsharp.org/use/windows/).
+
+## Setting up text editors for Ocaml and F#
 
 ### Emacs
+For OCaml, the copy of `emacs` you run from the same terminal as `opam` is available should have Merlin set up automatically by `opam user-setup install` above.
+
+For F#, install `fsharp-mode` from MELPA.
+
+Mac OS users: we recommend you use `brew` to update `emacs` as described above.
 
 ### Vim
+For OCaml, the copy of `vim` you run from the same terminal as `opam` is available should have Merlin set up automatically by `opam user-setup install` above. You can also install [`rgrinberg/vim-ocaml`](https://github.com/rgrinberg/vim-ocaml) for some additional features.
+
+For F#, use [`fsharp/vim-fsharp`](https://github.com/fsharp/vim-fsharp).
 
 ### Sublime Text
 
 ### Atom
 
 ### Visual Studio Code
-
-## Setting up F#
-
-### Mac OS
-
-### Linux
-
-### Windows
